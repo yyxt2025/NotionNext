@@ -22,6 +22,18 @@ module.exports = {
   COMMENT_TWIKOO_CDN_URL:
     process.env.NEXT_PUBLIC_COMMENT_TWIKOO_CDN_URL ||
     'https://s4.zstatic.net/npm/twikoo@1.6.44/dist/twikoo.min.js', // twikoo客户端cdn
+  import Twikoo from 'twikoo';
+  export default function Comment() {
+  useEffect(() => {
+    Twikoo.init({
+      envId: 'https://twikoo-self-seven.vercel.app/',  // 替换成你的 Twikoo 云环境ID
+      el: '#twikoo',
+      locale: 'zh-CN',      // 强制设置为中文
+    });
+  }, []);
+
+  return <div id="twikoo"></div>;
+ }
 
   // utterance
   COMMENT_UTTERRANCES_REPO:
