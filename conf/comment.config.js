@@ -22,6 +22,7 @@ module.exports = {
   COMMENT_TWIKOO_CDN_URL:
     process.env.NEXT_PUBLIC_COMMENT_TWIKOO_CDN_URL ||
     'https://s4.zstatic.net/npm/twikoo@1.6.44/dist/twikoo.min.js', // twikoo客户端cdn
+  COMMENT_TWIKOO_LOCALE: process.env.NEXT_PUBLIC_COMMENT_TWIKOO_LOCALE || 'zh-CN', // <--- 新增中文显示
 
   // utterance
   COMMENT_UTTERRANCES_REPO:
