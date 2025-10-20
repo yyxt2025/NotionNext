@@ -20,7 +20,8 @@ module.exports = {
   COMMENT_TWIKOO_COUNT_ENABLE: process.env.NEXT_PUBLIC_COMMENT_TWIKOO_COUNT_ENABLE || false, // 评论数
   COMMENT_TWIKOO_CDN_URL: process.env.NEXT_PUBLIC_COMMENT_TWIKOO_CDN_URL || 'https://s4.zstatic.net/npm/twikoo@1.6.44/dist/twikoo.min.js', // twikoo客户端CDN
   COMMENT_TWIKOO_LOCALE: process.env.NEXT_PUBLIC_COMMENT_TWIKOO_LOCALE || 'zh-CN', // <--- 新增
-
+  COMMENT_TWIKOO_LANG: process.env.NEXT_PUBLIC_COMMENT_TWIKOO_LANG || 'zh-CN', // 你的 TWIKOO 語言 e.g 'en', 'zh-TW', 'zh-CN', 預設 'en
+  
   // utterance
   COMMENT_UTTERRANCES_REPO:
     process.env.NEXT_PUBLIC_COMMENT_UTTERRANCES_REPO || '', // 你的代码仓库名， 例如我是 'tangly1024/NotionNext'； 更多文档参考 https://utteranc.es/
