@@ -13,7 +13,8 @@ const Twikoo = ({ isDarkMode }) => {
   const envId = siteConfig('COMMENT_TWIKOO_ENV_ID')
   const el = siteConfig('COMMENT_TWIKOO_ELEMENT_ID', '#twikoo')
   const twikooCDNURL = siteConfig('COMMENT_TWIKOO_CDN_URL')
-  const lang = siteConfig('LANG')
+  // const lang = siteConfig('LANG') 一直显示英文，注释掉这行，用下面行
+  const lang = process.env.NEXT_PUBLIC_TWIKOO_LANG || 'zh-CN'
   const [isInit] = useState(useRef(false))
 
   const loadTwikoo = async () => {
